@@ -21,3 +21,41 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# build, ide, config and target dirs
+**/target/*
+**/.idea/*
+**/.springBeans
+**/.cache-main
+**/.cache-tests
+**/META-INF
+*.iml
+*.ipr
+*.iws
+*.log
+**/__pycache__/*
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+/target/
+

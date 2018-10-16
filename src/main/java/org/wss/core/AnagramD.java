@@ -1,20 +1,18 @@
 package org.wss.core;
 
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class AnagramD {
-    
+
     private Map<String, List<String>> mapAnagrams(List<String> words) {
         Map<String, List<String>> data = new HashMap<>();
         if (null == words || words.isEmpty()) {
             return data;
         }
-             
         for (String word : words) {
             System.out.println(word);
             String key = sortWord(word);
@@ -27,14 +25,14 @@ public class AnagramD {
         }
         return data;
     }
-    
+
     private String sortWord(String word) {
         char[] c = word.toCharArray();
         Arrays.sort(c);
         return new String(c);
     }
-    
-    public static void main (String [] argv) {
+
+    public static void main(String[] argv) {
         AnagramD ana = new AnagramD();
         List<String> words = new ArrayList<>();
         words.add("apple");
@@ -43,12 +41,12 @@ public class AnagramD {
         words.add("vaja");
         words.add("a");
         Map<String, List<String>> data = ana.mapAnagrams(words);
-        
+
         for (String key : data.keySet()) {
-            System.out.println("Key : " +key + " Word list : " +data.get(key));
+            System.out.println("Key : " + key + " Word list : " + data.get(key));
         }
-        
+
     }
-    
+
 }
 
