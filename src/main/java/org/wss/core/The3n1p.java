@@ -1,3 +1,5 @@
+package org.wss.core;
+
 import java.util.Set;
 import java.util.HashSet;
 

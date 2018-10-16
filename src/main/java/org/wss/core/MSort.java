@@ -1,3 +1,4 @@
+package org.wss.core;
 
 public class MSort {
 

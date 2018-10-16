@@ -1,0 +1,2 @@
+javac -verbose ../../src/main/java/org/wss/core/*.java
+
